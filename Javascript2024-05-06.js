@@ -38,7 +38,7 @@ for (var i = 1; i <= 100; i++) {
         sum += i;
     }
 }
-console.log("The sum of all even numbers from 1 to 100 is: " + sum);
+console.log("Sum of all even nums from 1-100 is equal to" + sum);
 
 var number = 28;
 var sum = 0;
@@ -50,9 +50,9 @@ for (var i = 1; i < number; i++) {
 }
 
 if (sum === number) {
-    console.log(number + " is a perfect number.");
+    console.log(number + " perfect number.");
 } else {
-    console.log(number + " is not a perfect number.");
+    console.log(number + " not so perfect.");
 }
 
 function isPrime(number) {
