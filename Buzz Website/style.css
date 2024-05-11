@@ -42,20 +42,60 @@
     margin-bottom: 492px;
     margin-right: 805px;
 }
-
-/* Rest of your styles */
-.title {
-    font-size: 82px;
-    color: #A92222;
-
-}
-
-.button {
+.button-right { /*bottom*/
+    margin-bottom: 0px;
+    margin-right: 805px;
     background: black;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+
+}
+.button-left { /*  top */
+    margin-bottom: 300px;
+    margin-left: 0px;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-bottom { /* Right*/
+    margin-top: 0px;
+    margin-left: 800px;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-top { /* left*/
+    margin-top: 350px;
+    margin-right: 3px;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Rest of your styles */
+.title {
+    font-size: 82px;
+    color: #A92222;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.button {
+    display:flex;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position:absolute;
 }
 
 .button-text {
