@@ -1,49 +1,59 @@
 .container {
+    position: relative;
     width: 1100px;
     height: 811px;
-    background-color: aliceblue;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px #A79090 solid;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center items vertically */
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width and height */
 }
 
 .image {
-    display: block;
-    margin-bottom: 10px;
-    width: 291px;
-    height: 315px;
+    width: 291px; /* Keep the width the same */
+    height: 315px; /* Keep the height the same */
+    object-fit: cover; /* Ensure the image covers the entire container */
     border-radius: 24px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    position: absolute;
 }
 
-/* Button styles */
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Rest of your styles */
+.title {
+    font-size: 82px;
+}
+
 .button {
-    width: 93px;
-    height: 56px;
-    padding: 14px 24px;
     background: black;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 8px; /* Space between buttons */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .button-text {
-    color: white;
     font-size: 16px;
-    font-family: sans-serif; /* Use a fallback font */
-    font-weight: 500;
-    line-height: 24px;
-    word-wrap: break-word;
-}
-
-/* Title styles */
-.title {
-    color: #A92222;
-    font-size: 84px;
-    font-family: sans-serif; /* Use a fallback font */
-    font-weight: 400;
-    word-wrap: break-word;
 }
