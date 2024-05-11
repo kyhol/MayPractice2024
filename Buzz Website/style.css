@@ -4,9 +4,12 @@
     background-color: aliceblue;
     display: flex;
     justify-content: center;
+    align-items: center; /* Center items vertically */
 }
 
 .image {
+    display: block;
+    margin-bottom: 10px;
     width: 291px;
     height: 315px;
     border-radius: 24px;
@@ -21,18 +24,16 @@
     background: black;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    display: inline-flex;
+    margin-right: 8px; /* Space between buttons */
 }
 
 .button-text {
-    transform: rotate(0.71deg);
-    transform-origin: 0 0;
     color: white;
     font-size: 16px;
-    font-family: Inter;
+    font-family: sans-serif; /* Use a fallback font */
     font-weight: 500;
     line-height: 24px;
     word-wrap: break-word;
@@ -42,7 +43,7 @@
 .title {
     color: #A92222;
     font-size: 84px;
-    font-family: Inter;
+    font-family: sans-serif; /* Use a fallback font */
     font-weight: 400;
     word-wrap: break-word;
 }
