@@ -7,20 +7,69 @@
     border: 1px #A79090 solid;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
     padding: 20px;
-    box-sizing: border-box; /* Include padding in the width and height */
-    margin: auto; /* Auto margin to center horizontally */
-    box-sizing: border-box; /* Include padding in the width and height */
+    box-sizing: border-box;
+    /* Include padding in the width and height */
+    margin: auto;
+    /* Auto margin to center horizontally */
+    box-sizing: border-box;
+    /* Include padding in the width and height */
 }
 
 .image {
-    width: 291px; /* Keep the width the same */
-    height: 315px; /* Keep the height the same */
-    object-fit: cover; /* Ensure the image covers the entire container */
+    width: 291px;
+    /* Keep the width the same */
+    height: 315px;
+    /* Keep the height the same */
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
     border-radius: 24px;
     position: absolute;
+}
+
+.imageleft {
+    width: 291px;
+    height: 181px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 23px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-right: 810px;
+}
+
+.imageright {
+    width: 291px;
+    height: 181px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 23px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-left: 810px;
+}
+
+.imagetop {
+    width: 518px;
+    height: 315px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 23px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-bottom: 492px;
+
+}
+
+.imagebottom {
+    width: 518px;
+    height: 315px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 23px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-top: 492px;
 }
 
 .top-left {
@@ -42,60 +91,103 @@
     margin-bottom: 492px;
     margin-right: 805px;
 }
-.button-right { /*bottom*/
+
+.button-right {
+    /*bottom*/
     margin-bottom: 0px;
     margin-right: 805px;
-    background: black;
+    background: #62ABEF !important; /* Change the background color */
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 14px 24px;
+    border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    width: 97.755px;
+    height: 24.123px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    /* Button Shadow */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 
 }
-.button-left { /*  top */
+
+.button-left {
+    /*  top */
     margin-bottom: 300px;
     margin-left: 0px;
-    background: black;
+    background: #62ABEF !important; /* Change the background color */
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 14px 24px;
+    border-radius: 8px;
     cursor: pointer;
-}
-.button-bottom { /* Right*/
-    margin-top: 0px;
-    margin-left: 800px;
-    background: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    display: flex;
+    width: 97.755px;
+    height: 24.123px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    /* Button Shadow */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
-.button-top { /* left*/
+.button-bottom {
+    /* Right */
+    margin-top: 0px;
+    margin-left: 800px;
+    background: #62ABEF !important; /* Change the background color */
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    width: 97.755px;
+    height: 24.123px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    /* Button Shadow */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.button-top {
+    /* left*/
     margin-top: 350px;
     margin-right: 3px;
-    background: black;
+    background: #62ABEF !important; /* Change the background color */
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 14px 24px;
+    border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    width: 97.755px;
+    height: 24.123px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    /* Button Shadow */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
+
 /* Rest of your styles */
 .title {
     font-size: 82px;
     color: #A92222;
     margin-top: 1px;
-    margin-left: 1px;
 }
 
 .button {
-    display:flex;
+    display: flex;
     background: black;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
 }
 
 .button-text {
@@ -108,8 +200,17 @@
         width: 100%;
         height: auto;
     }
+
     .image {
         width: 100%;
         height: auto;
     }
+}
+
+.stars {
+    fill: #EDF11F;
+    height: 38px;
+    width: 38px;
+    margin-bottom: 120px;
+    position: absolute;
 }
