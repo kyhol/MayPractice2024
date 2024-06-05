@@ -216,6 +216,7 @@
 }
 
 .stars {
+    justify-content: space-between;
     fill: #EDF11F;
     height: 38px;
     width: 38px;

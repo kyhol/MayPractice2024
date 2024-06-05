@@ -58,5 +58,25 @@ function updateScore(currentScore, value, bonus) {
         return currentScore + value;
     }
 }
-updateScore(10, 5, 2); // 20
-updateScore(10, 3); // 13
+console.log(updateScore(10, 5, 2)); // 20 
+console.log(updateScore(10, 3)); // 13
+
+// following function will be the same
+
+function updateScore(currentScore, value, bonus) {
+    return bonus ? currentScore + value * bonus : currentScore + value;
+} //bonus will either be truthy or falsy 
+
+//  || or
+//  && and
+
+function updateScore(currentScore, value, bonus) {
+    return currentScore + value * (bonus || 1);
+}
+
+function updateScore(currentScore, value, bonus = 1) {
+    return currentScore + value * bonus;
+}
+
+var height = "5.6ft";
+console.log(parseFloat(height)); // 5.6 parseFloat parseFloat parseFloat parseFloat parseFloat
