@@ -332,8 +332,7 @@ console.log(coord2);
 
  ******************************************************************************/
 
-// Assuming normalizeCoord is already defined as follows:
-// Assuming normalizeCoord is defined as follows:
+
 function normalizeCoord(value) {
   if (typeof value === 'string') {
     let parts = value.replace(/[^\d.,-]/g, '').split(',');
@@ -359,9 +358,8 @@ function formatCoords(...values) {
   return `(${coords.join(', ')})`;
 }
 
-// Example usage
+
 console.log(formatCoords("42.9755,-77.4369", "[-62.1234, 42.9755]", "300,-9000"));
-// Output: ((42.9755, -77.4369), (42.9755, -62.1234))
 
 /*******************************************************************************
  * Problem 7: determine MIME type from filename extension
