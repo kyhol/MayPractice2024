@@ -244,7 +244,7 @@ function toDateString(value) {
     const month = (date.getMonth() + 1).toString().padStart(2, '0');
     const day = date.getDate().toString().padStart(2, '0');
     return `${year}-${month}-${day}`;
-  } catch (error) {
+  } catch (e) {
     throw new Error('Invalid date');
   }
 
@@ -346,7 +346,7 @@ function normalizeCoord(value) {
   }
   throw new Error('Invalid coordinate format');
 }
-
+console.log(normalizeCoord('42.9755,-77.4369'));
 function formatCoords(...values) {
   let coords = values.map(value => {
     try {
@@ -467,7 +467,10 @@ function mimeFromFilename(filename) {
       return 'application/octet-stream';
   }
 }
-
+console.log(mimeFromFilename('/User/Documents/readme.txt')); 
+console.log(mimeFromFilename('index.html')); 
+console.log(mimeFromFilename('image.JPG')); 
+console.log(mimeFromFilename('audio.mp3')); 
 
 /*******************************************************************************
  * Problem 8, Part 1: generate license text and link from license code.
